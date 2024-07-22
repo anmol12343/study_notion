@@ -10,8 +10,8 @@ const CourseRoutes = require("./routes/Course");
 
 //const database = require("./config/database");
 const cookieParser = require("cookie-parser");
-var cors = require('cors')
-// const cors = require("cors");
+//var cors = require('cors')
+ const cors = require("cors");
 const fileUpload = require("express-fileupload");
 const { cloudnairyconnect } = require("./config/cloudinary");
 
@@ -26,10 +26,10 @@ dbconnect();
 app.use(express.json());
 app.use(cookieParser());
 
-app.use(cors())
+//app.use(cors());
 app.use(
   cors({
-    origin: "https://study-notion-anmol-pandey.vercel.app/",
+   origin:"http://localhost:3000",
     credentials: true,
     maxAge: 14400,
   })
