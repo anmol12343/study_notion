@@ -6,7 +6,6 @@ const mongoose = require("mongoose");
 // By this line , All the information present in the enviroment variable will stored in the process object  
 require("dotenv").config();
 
-
 const dbconnect = ()=>{
     mongoose.connect(process.env.MONGODB_URL,{
         useNewUrlParser:true,
