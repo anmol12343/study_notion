@@ -29,7 +29,7 @@ app.use(cookieParser());
 //app.use(cors());
 app.use(
   cors({
-   origin:"https://study-notion-anmol-pandey--iota.vercel.app/",
+   origin:"https://study-notion-anmol-pandey--iota.vercel.app",
     credentials: true,
     maxAge: 14400,
   })
